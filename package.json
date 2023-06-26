@@ -1,0 +1,19 @@
+{
+  "name": "spa-pokemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlavega13/SPA-POKEMON.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlavega13/SPA-POKEMON/issues"
+  },
+  "homepage": "https://github.com/carlavega13/SPA-POKEMON#readme"
+}
