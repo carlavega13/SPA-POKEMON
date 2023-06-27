@@ -29,7 +29,6 @@ try {
 }
 const transformData:(pokemons:Array<Object>)=>Array<Object>|any=async(pokemons) =>{
     try {
-        let evoPromiseArray:Promise<Object>[]=[]
        let transformedPokes:Array<Object>=pokemons.map(async(poke:any)=>{
         let types=poke.types.map((t:any)=>t.type.name)
 
@@ -40,7 +39,7 @@ let id=await axios(`https://pokeapi.co/api/v2/pokemon-species/${poke.id}`).then(
             _id:poke.id,
                 name:poke.name,
                 img:poke.sprites.other.home.front_default,
-                imgShiny:poke.sprites.other.home.front_default.front_shiny,
+                imgShiny:poke.sprites.other.home.front_shiny,
                 lifePoints:poke.stats[0].base_stat,
                 attackPoints:poke.stats[1].base_stat,
                 defensePoints:poke.stats[2].base_stat,
