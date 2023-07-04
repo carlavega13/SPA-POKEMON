@@ -3,6 +3,7 @@ export interface Pokemon extends mongoose.Document{
     _id:Number,
     name:String;
     img:String;
+    gif:String,
     imgShiny:String;
     lifePoints:Number;
     attackPoints:Number;
@@ -18,6 +19,7 @@ const pokemonSchema=new Schema({
     _id:Number,
     name:String,
     img:String,
+    gif:String,
     imgShiny:String,
     lifePoints:Number,
     attackPoints:Number,

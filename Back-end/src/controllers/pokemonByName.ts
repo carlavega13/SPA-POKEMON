@@ -16,7 +16,6 @@ const pokemonByName:(name:String)=>Array<Object>|Promise<any>=async(name)=>{
                     speedPoints:res.data.stats[5].base_stat,
                     height:res.data.height,
                     weight:res.data.weight,
-                    // types:res.data.types,
                     types:res.data.types.map((t:any)=>t.type.name),
                     // evolutionId:id,
                     createdInDb:false
@@ -24,7 +23,6 @@ const pokemonByName:(name:String)=>Array<Object>|Promise<any>=async(name)=>{
         })
         .catch(err=>false)
       const foundDB= await Pokemon.find({ name: { $regex: `^${name}`, $options: 'i' } }).limit(15)
-    console.log(foundDB);
     if(!foundApi){
         return foundDB
     }

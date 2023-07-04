@@ -7,7 +7,6 @@ try {
 const id:Number=Number(req.query.id)
 const idChain:Number=Number(req.query.chain)
 const pokemon:Object= await pokemonById(id,idChain)
-    // console.log(pokemon);
     
        res.status(200).send(pokemon)
 } catch (error:any) {
