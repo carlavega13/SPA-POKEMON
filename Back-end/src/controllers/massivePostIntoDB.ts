@@ -35,6 +35,7 @@ const transformData:(pokemons:Array<Object>)=>Array<Object>|any=async(pokemons) 
 let id=await axios(`https://pokeapi.co/api/v2/pokemon-species/${poke.id}`).then(res=>Number(res.data.evolution_chain.url.slice(0,-1).split("/").pop()))
 
 
+
         return {
             _id:poke.id,
                 name:poke.name,
@@ -48,7 +49,7 @@ let id=await axios(`https://pokeapi.co/api/v2/pokemon-species/${poke.id}`).then(
                 height:poke.height,
                 weight:poke.weight,
                 types:types,
-                evolutionId:id,
+                evolutionId:Number(id),
                 createdInDb:false
             }
             

@@ -10,6 +10,7 @@ const pokemonByName:(name:String)=>Array<Object>|Promise<any>=async(name)=>{
                     name:res.data.name,
                     img:res.data.sprites.other.home.front_default,
                     imgShiny:res.data.sprites.other.home.front_shiny,
+                    gif:res.sprites.front_default,
                     lifePoints:res.data.stats[0].base_stat,
                     attackPoints:res.data.stats[1].base_stat,
                     defensePoints:res.data.stats[2].base_stat,
