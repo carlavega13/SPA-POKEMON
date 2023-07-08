@@ -1,24 +1,16 @@
 .card{
     width: fit-content;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .pokeImg{
 position: relative;
 top:4em;
+left: 1.3em;
 }
 
-.gradiantCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 11.1875rem;
-    height: 9.3125rem;
-    flex-shrink: 0;
-    background-color: rgba(194, 194, 26, 0.753);
-    border-radius: 1.625rem;
-background: linear-gradient(210deg, #00FF47 0%, #BDCBFA 100%);
-}
+
 
 .name{
     color: #252525;
@@ -34,6 +26,7 @@ display: flex;
 align-items:flex-end;
 }
 
+
 .types{
 width: 100%;
 height: 100%;
@@ -41,4 +34,148 @@ display: flex;
 align-items: flex-end;
 justify-content:flex-end;
 padding-right: 1em;
+}
+.link{
+    text-decoration: none;
+}
+
+
+
+
+/*! ......................................... TIPOS ........................................... !*/
+.fire{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: linear-gradient(207deg, #F00 0%, #FFE0E0 100%);
+
+}
+.ground{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+background: linear-gradient(211deg, #FD6A00 0%, #FFCC69 74.41%);
+}
+.water{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+background: linear-gradient(208deg, #00F0FF 0%, #DBF8FF 100%);
+}
+.normal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+background: linear-gradient(214deg, #D1D1D1 9.65%, #B7B3B3 53.35%, #D8D3D3 100%);
+}
+.steel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: linear-gradient(214deg, #625F60 0%, #DDD 100%);
+}
+.psychic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: linear-gradient(210deg, #493671 0%, #BDCBFA 100%); 
+}
+.grass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: linear-gradient(210deg, #00FF47 0%, #BDCBFA 100%); 
+}
+.fairy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: linear-gradient(210deg, #FC3394 0%, #FFA3B9 51.40%);
+}
+.electric{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: linear-gradient(207deg, #DBFF00 0%, #F7FFC3 100%);
+
+}
+.dragon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: linear-gradient(210deg, #F28C2E 0%, #EEF22A 100%);
+}
+.dark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: linear-gradient(218deg, #21435E 0%, #B3C3F8 100%);
+}
+.non{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.1875rem;
+    height: 9.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: linear-gradient(212deg, #89FF8E 0%, #FFE5BD 100%);
+
+
 }

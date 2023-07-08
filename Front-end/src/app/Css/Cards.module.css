@@ -1,0 +1,7 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+padding-left:10em ;
+padding-right:10em ;
+
+}
