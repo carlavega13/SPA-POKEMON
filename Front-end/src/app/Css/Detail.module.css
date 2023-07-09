@@ -1,0 +1,16 @@
+.box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.evolutionsBox{
+    display: flex;
+justify-content: center;
+justify-content: space-evenly
+}
+.back{
+    background-color: blueviolet;
+}
+.backButton{
+    padding: 1em;
+}

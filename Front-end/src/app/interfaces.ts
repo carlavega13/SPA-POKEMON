@@ -1,4 +1,6 @@
 export interface CardI{
+    key:Number,
+    idChain:Number,
     _id:Number,
     types:Array<String>,
     name:String,

@@ -6,15 +6,21 @@ import {create}from "zustand"
 
 export interface PokeState{
     pokes:Array<Object>,
+    pokeDetail:any,
     pokesCopia:Array<Object>,
     types:Array<Object>,
-    getPokes:()=>Promise<void>
+    getPokes:()=>Promise<void>,
+    getPokeById:(id:Number,idChain:Number)=>Promise<void>,
+    cleanDetail:()=>void,
+    searchPokes:(input:String)=>any,
+    bringBackPokes:()=>void
 
 }
 
 export const usePokeStore=create<PokeState>((set)=>{
     return {
         pokes:[],
+        pokeDetail:{},
         pokesCopia:[],
         types:[],
         getPokes:async()=>{
@@ -23,16 +29,45 @@ export const usePokeStore=create<PokeState>((set)=>{
                 pokemons= shufflePokes(pokemons)
                 set(state=>({
                     ...state,
-                    pokes:pokemons
-                }))
-
-      
-                
+                    pokes:pokemons,
+                    pokesCopia:pokemons
+                }))   
             } catch (error:any) {
                 console.log(error);
                 
             }
+        },
+        getPokeById:async(id,idChain)=>{
+         try {            
+            const poke= await axios.get(`http://localhost:3001/pokemon/detail?id=${id}&chain=${idChain}`).then(res=>res.data)
+            set(state=>({
+                ...state,
+                pokeDetail:poke
+            }))
+         } catch (error:any) {
+           console.log(error.message);
+            
+         }
+        },
+        cleanDetail:()=>{
+            set(state=>({
+            ...state,
+            pokeDetail:[]
+        }))},
+        searchPokes:async(input)=>{
+        const response=await axios.get(`http://localhost:3001/pokemon/name/?name=${input.trim()}`).then(res=>res.data)
+        set(state=>({
+            ...state,
+            pokesCopia: response
+        }))
+        },
+        bringBackPokes:()=>{
+        set(state=>({
+            ...state,
+            pokesCopia:state.pokes
+        }))
         }
+
    
         }
 

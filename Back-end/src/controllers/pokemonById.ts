@@ -10,7 +10,8 @@ pokemons=pokemons.map((p:any)=>{
     return {
         name:p.name,
         _id:p._id,
-        img:p.img
+        img:p.img,
+        idChain:p.evolutionId
 
     }
 })
