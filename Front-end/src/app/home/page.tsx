@@ -2,8 +2,10 @@
 import { usePokeStore } from "../../../store/pokeStore";
 import Cards from "../Components/Cards"
 import NavBar from "../Components/NavBar";
-import SearchBar from "../Components/SearchBar";
+
 import Paginated from "../Components/Paginated"
+import Order from "../Components/Order";
+import Filter from "../Components/Filters";
 import {useState }from "react"
 import Shuffle from "../Components/Shuffle";
 import ButtonForm from "../Components/ButtonForm";
@@ -35,7 +37,11 @@ getPokes()
     return (
       <main >
      <NavBar/>
-     <SearchBar/>
+     <div className={s.filterOrderBox}>
+     <Order/>
+   
+     <Filter/>
+     </div>
      <Cards pokesCopia={slicePokemons}/>
      <div className={s.paginatedBox}>
      <Shuffle/>

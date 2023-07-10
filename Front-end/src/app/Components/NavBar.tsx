@@ -5,15 +5,18 @@ import { LuMail } from 'react-icons/lu';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import s from "../Css/NavBar.module.css"
+import SearchBar from "./SearchBar";
 export default function NavBar() {
     return (
       <main className={s.box} >
-        <div>
+        <div className={s.theme}>
            <FiSun/>
        <BiMoon/>
         </div>
-      <Image width={439} height={254}alt={"Not Found"}src={"/logo.webp"}/>
+     <div>
 
+       <SearchBar/>
+     </div>
    
 
        <div>

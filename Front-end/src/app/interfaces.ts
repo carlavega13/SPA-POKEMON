@@ -5,6 +5,7 @@ export interface CardI{
     types:Array<String>,
     name:String,
     img:String,
+    attackPoints:number
    }
    export interface PokeFromBack{
     _id:Number,

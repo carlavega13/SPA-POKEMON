@@ -19,9 +19,16 @@ if(e.keyCode===13){
   }
     return (
       <main className={s.box} >
-       <input onKeyUp={enter} onChange={(e)=>setPoke(e.target.value)} value={poke} type="text" />
+         <img className={s.logo} alt={"Not Found"}src={"/logo.png"}/>
+         <div className={s.searchBar}>
+
+       <input className={s.searchBox} onKeyUp={enter} onChange={(e)=>setPoke(e.target.value)} value={poke} type="text" />
+       <div className={s.butt}>
        <button onClick={searchHandler}>Search Pokemon</button>
        <button onClick={bringBackHandler}>Show All</button>
+
+       </div>
+         </div>
       </main>
     )
   }

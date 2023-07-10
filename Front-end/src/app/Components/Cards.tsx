@@ -10,7 +10,7 @@ export default function Home(props:any) {
       <main className={s.cards}>
          {
           props.pokesCopia?.map((poke:PokeFromBack|any)=><Card idChain={poke.evolutionId
-          } key={poke._id} _id={poke._id} name={poke.name} img={poke.img} types={poke.types} />)
+          } attackPoints={poke.attackPoints} key={poke._id} _id={poke._id} name={poke.name} img={poke.img} types={poke.types} />)
          }
 
 
