@@ -36,12 +36,13 @@ let id=await axios(`https://pokeapi.co/api/v2/pokemon-species/${poke.id}`).then(
 
 
 
+
         return {
             _id:poke.id,
                 name:poke.name,
                 img:poke.sprites.other.home.front_default,
                 imgShiny:poke.sprites.other.home.front_shiny,
-                gif:poke.sprites.front_default,
+                gif:poke.sprites.versions["generation-v"]["black-white"].animated["front_default"],
                 lifePoints:poke.stats[0].base_stat,
                 attackPoints:poke.stats[1].base_stat,
                 defensePoints:poke.stats[2].base_stat,

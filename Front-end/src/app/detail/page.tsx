@@ -2,21 +2,16 @@
 import { usePokeStore } from "../../../store/pokeStore"
 import Image from "next/image"
 import s from "../Css/Detail.module.css"
-import Link from "next/link"
 import { useRouter } from 'next/navigation';
+
 export default function Detail(props:any) {
   const router=useRouter()
   const{id,idChain}=props.searchParams
-  const{pokeDetail,getPokeById,cleanDetail}=usePokeStore(state=>state)
+  const{pokeDetail,getPokeById}=usePokeStore(state=>state)
+
   Object.entries(pokeDetail).length === 0?getPokeById(Number(id),Number(idChain)):null
 
 
-  const backButton=()=>{
-
-  }
-
- 
-  
 
     return (
       <main className={s.box}>
@@ -35,7 +30,7 @@ export default function Detail(props:any) {
   </ul>
   <div className={s.back}>
  
-  <button className={s.backButton} onClick={()=>router.push("/home")}>Back to Home !</button>
+  <button className={s.backButton} onClick={()=>router.back()}>Back to Home !</button>
 
    <img src={pokeDetail?.gif} alt="dsads" />
   </div>

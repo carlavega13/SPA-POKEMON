@@ -1,0 +1,83 @@
+.box{
+    transition: 1s ;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 3.125rem;
+background: linear-gradient(194deg, rgba(125, 128, 130, 0.49) 0%, rgba(183, 183, 183, 0.49) 53.19%, rgba(125, 128, 130, 0.49) 100%);
+padding-left: 1.5em;
+padding-right: 1.5em;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+margin-top: 1.5em;
+
+}
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(37, 37, 37, 0.62);
+font-family: Imprima;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+   padding: 1em;
+    transition: 1s ;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    transition: 1s ;
+    width: 3rem;
+height: 3rem;
+flex-shrink: 0;
+background:  linear-gradient(199deg, #8993FF 0%, #D4D7FB 100%);
+border: 0 transparent;
+border-radius: 50%;
+cursor:pointer;
+
+}
+.butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(37, 37, 37, 0.62);
+font-family: Imprima;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+   padding: 1em;
+    transition: 1s ;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    width: 2.375rem;
+height: 2.375rem;
+flex-shrink: 0;
+border-radius: 50%;
+background:  linear-gradient(199deg, #8993FF 0%, #D4D7FB 100%);
+border: 0 transparent;
+cursor:pointer;
+}
+.selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(37, 37, 37, 0.62);
+font-family: Imprima;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+   padding: 1em;
+    transition: 1s ;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    width: 2.375rem;
+height: 2.375rem;
+flex-shrink: 0;
+border-radius: 50%;
+background:  linear-gradient(211deg, #A5C253 0%, #E5E5E5 100%);
+
+border: 0 transparent;
+cursor:pointer;
+}
